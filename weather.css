@@ -1,0 +1,29 @@
+.mypanel{
+	margin-top:10px;	
+}
+
+.info{
+	width:690px;
+	height:300px;
+	background-color:#FFF0F5;
+	padding:5px;
+}
+ 
+.sunny{
+	background-color:#FFD700 !important;
+}
+
+.rain{
+	background-color:#BDB76B !important;
+}
+.clouds{
+	background-color:#fff8dc !important;
+}
+
+.clear{
+
+	background-color:#00BFFF !important;
+
+}
+
+

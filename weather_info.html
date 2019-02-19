@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Weather Info</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script
+	src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.1.0.js"></script>
+
+
+<script type="text/javascript" src="weather.js">
+	//create an app
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="weather.css" />
+</head>
+<body ng-app="testapp" ng-controller="testController"  ng-init="init_weather();">
+
+ 
+ <h2 align="center">Today's Weather</h2>
+	<hr/>
+ 
+ 
+ <div class="container info {{description}}">
+ 	<div class="row">
+ 		<div class="col-sm-4"></div>
+ 		
+ 		<div class="col-sm-4">
+ 			<div>{{city}}</div>
+ 			<div>{{date_time}}</div>
+ 		</div>
+ 		<div class="col-sm-4"></div>
+ 	</div>
+ 	
+ 	<div  class="col-sm-3">
+ 	<div>{{temp}} &deg;F
+ 	</div>
+ 	<div>{{description}}</div>
+ 	<div>H {{temp_min}} &deg;F</div><div>L {{temp_max}} &deg;F</div>
+ 	</div>
+ 	
+ 	<div  class="col-sm-3"></div>
+ 	<div  class="col-sm-3"></div>
+ 	<div  class="col-sm-3">
+ 	<div>Humidity: {{humidity}}%</div>
+ 	<div>Wind(mph): {{wind_speed}}</div>
+ 	</div>
+ </div>
+</body>
+</html>
